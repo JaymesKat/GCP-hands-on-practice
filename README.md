@@ -27,6 +27,7 @@ Documentation of completed GCP Qwiks labs for Google Africa Developer Associate 
 **Initial set up**
 
 - Open command line terminal (Ensure you have [installed](https://cloud.google.com/sdk/install) and [set up](https://cloud.google.com/sdk/docs/initializing) Google Cloud SDK in your local environment)
+- Ensure gcloud is authenticated with a user with permissions to administer Compute Engine
 - Set default project `gcloud config set project [PROJECT ID]` It will be referenced later using the `$DEV_SHELL_PROJECT_ID` variable.
 - The network **my-internal-app** with **subnet-a** and **subnet-b** and firewall rules for **RDP**, **SSH**, and **ICMP** traffic have been configured for you.
 
@@ -92,7 +93,6 @@ Documentation of completed GCP Qwiks labs for Google Africa Developer Associate 
   		--no-address \
   		--metadata=startup-script-url=gs://cloud-training/gcpnet/ilb/startup.sh \
   		--maintenance-policy=MIGRATE \
-  		--service-account=215988533831-compute@developer.gserviceaccount.com \
   		--scopes=https://www.googleapis.com/auth/devstorage.read_only,https://www.googleapis.com/auth/logging.write,https://www.googleapis.com/auth/monitoring.write,https://www.googleapis.com/auth/servicecontrol,https://www.googleapis.com/auth/service.management.readonly,https://www.googleapis.com/auth/trace.append \
   		--region=us-central1 \
   		--tags=backend-service \
@@ -117,7 +117,6 @@ Documentation of completed GCP Qwiks labs for Google Africa Developer Associate 
   		--no-address \
   		--metadata=startup-script-url=gs://cloud-training/gcpnet/ilb/startup.sh \
   		--maintenance-policy=MIGRATE \
-  		--service-account=215988533831-compute@developer.gserviceaccount.com \
   		--scopes=https://www.googleapis.com/auth/devstorage.read_only,https://www.googleapis.com/auth/logging.write,https://www.googleapis.com/auth/monitoring.write,https://www.googleapis.com/auth/servicecontrol,https://www.googleapis.com/auth/service.management.readonly,https://www.googleapis.com/auth/trace.append \
   		--region=us-central1 \
   		--tags=backend-service \
