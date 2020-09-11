@@ -16,9 +16,9 @@ Documentation of completed GCP Qwiks labs for Google Africa Developer Associate 
 10. AK8S-05 Upgrading Kubernetes Engine Clusters
 11. AK8S-06 Creating Kubernetes Engine Deployments
 
-**Labs translated to gcloud command line instructions**
+## **Labs translated to gcloud command line instructions**
 
-**Lab1: Configuring an Internal Load Balancer**
+### **Lab1: Configuring an Internal Load Balancer**
 
 **Reference architecture**
 
@@ -227,7 +227,7 @@ Documentation of completed GCP Qwiks labs for Google Africa Developer Associate 
       --backend-service-region=us-central1
   ```
 
-**Lab 2: AK8S-05 Upgrading Kubernetes Engine Clusters**
+### **Lab 2: AK8S-05 Upgrading Kubernetes Engine Clusters**
 
 ​ **Initial Setup**
 Set default project `gcloud config set project [PROJECT ID]` It will be referenced later using the `$DEV_SHELL_PROJECT_ID` variable.
